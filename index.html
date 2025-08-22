@@ -278,49 +278,59 @@
     </div>
   </div>
 
-  <!-- 單一有效 JS -->
   <script>
-    const form = document.getElementById('contactForm');
-    const statusDiv = document.getElementById('formStatus');
-    const submitBtn = document.getElementById('submitBtn');
+  const form = document.getElementById('contactForm');
+  const statusDiv = document.getElementById('formStatus');
+  const submitBtn = document.getElementById('submitBtn');
 
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      submitBtn.disabled = true;
-      statusDiv.textContent = "送出中，請稍候...";
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    submitBtn.disabled = true;
+    statusDiv.textContent = "送出中，請稍候...";
 
-      const data = {
-        company: document.getElementById('company').value.trim(),
-        name: document.getElementById('name').value.trim(),
-        email: document.getElementById('email').value.trim(),
-        message: document.getElementById('message').value.trim()
-      };
-
+    const data = {
+      company: document.getElementById('company').value.trim(),
+      name: document.getElementById('name').value.trim(),
+      email: document.getElementById('email').value.trim(),
+      message: document.getElementById('message').value.trim()
+    };
+  
+    try {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbyeV47PCrP4a2J9YJRgpQTO0TN9OCOSVyYCwlURxv1PpW-JlP5ng0LE6bhmJ597sQJqpg/exec', { 
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+  
+      const text = await response.text();      // 先拿文字
+      let result;
       try {
-        const response = await fetch('https://script.google.com/macros/s/AKfycbyeV47PCrP4a2J9YJRgpQTO0TN9OCOSVyYCwlURxv1PpW-JlP5ng0LE6bhmJ597sQJqpg/exec', {  // ← 替換成你的 Web App exec URL
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(data)
-        });
-
-        const result = await response.json();
-        if (result.status === 'success') {
-          statusDiv.textContent = "✅ 送出成功，我們會盡快聯繫你！";
-          form.reset();
-        } else {
-          statusDiv.textContent = "❌ 送出失敗：" + (result.message || "請稍後再試");
-        }
-      } catch (err) {
-        statusDiv.textContent = "❌ 網路錯誤：" + err.message;
-      } finally {
-        submitBtn.disabled = false;
+        result = JSON.parse(text);             // 再解析 JSON
+      } catch(err) {
+        statusDiv.textContent = "❌ 伺服器回傳非 JSON：" + text;
+        return;
       }
-    });
+
+      if (result.status === 'success') {
+        statusDiv.textContent = "✅ 送出成功，我們會盡快聯繫你！";
+        form.reset();
+      } else {
+        statusDiv.textContent = "❌ 送出失敗：" + (result.message || "請稍後再試");
+      }
+
+    } catch (err) {
+      statusDiv.textContent = "❌ 網路錯誤：" + err.message;
+    } finally {
+      submitBtn.disabled = false;
+    }
+  });
   </script>
+
 </section>
 
 </body>
 </html>
+
 
 
 
