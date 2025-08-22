@@ -16,15 +16,6 @@
     .shadow-soft{ box-shadow: 0 10px 30px rgba(2,6,23,.08); }
     .badge{ font-size:.75rem; padding:.25rem .5rem; border-radius:999px; background:rgba(14,165,233,.1); color:#0369a1; border:1px solid rgba(14,165,233,.2) }
     .check::before{ content:"✓"; display:inline-block; margin-right:.5rem }
-
-    /* 動畫 */
-    @keyframes slide-in {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-    .animate-slide-in { animation: slide-in 0.8s ease forwards; }
-    .animate-fade-in { animation: fade-in 1.2s ease forwards; }
-    @keyframes fade-in { from { opacity:0; } to { opacity:1; } }
   </style>
 </head>
 <body>
@@ -48,71 +39,52 @@
 
   <!-- HERO -->
   <section class="relative isolate overflow-hidden">
-    <!-- 背景 SVG -->
     <div class="absolute inset-0 -z-10">
-      <svg class="w-full h-full opacity-70 animate-fade-in" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 560">
+      <svg class="w-full h-full opacity-60" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 560">
         <defs>
           <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
-            <stop offset="0%" stop-color="#dbeafe"/>
-            <stop offset="100%" stop-color="#f8fafc"/>
+            <stop offset="0%" stop-color="#e0f2fe"/>
+            <stop offset="100%" stop-color="#f1f5f9"/>
           </linearGradient>
         </defs>
         <rect width="100%" height="100%" fill="url(#g)"/>
       </svg>
     </div>
-
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
       <div class="grid md:grid-cols-2 gap-10 items-center">
-
-        <!-- 左側文字區 -->
         <div>
           <span class="badge">客製化軟體 / 年繳制服務</span>
-          <h1 class="mt-4 text-4xl md:text-5xl font-black tracking-tight leading-tight text-slate-900">以結果為導向的軟體開發夥伴</h1>
-          <p class="mt-5 text-lg text-slate-600 leading-relaxed">
-            提供網站、App、內部系統與資料流程整合。以 <strong>月費（年繳）NT$1,500 起</strong> 的服務方案，搭配客製化開發，快速上線、穩定維運。
-          </p>
+          <h1 class="mt-4 text-4xl md:text-5xl font-black tracking-tight leading-tight">以結果為導向的軟體開發夥伴</h1>
+          <p class="mt-5 text-lg text-slate-600 leading-relaxed">提供網站、App、內部系統與資料流程整合。以 <strong>月費（年繳）NT$1,500 起</strong> 的服務方案，搭配客製化開發，快速上線、穩定維運。</p>
           <div class="mt-8 flex flex-wrap gap-3">
-            <a href="#contact" class="px-5 py-3 rounded-xl bg-sky-500 text-white hover:bg-sky-600 shadow-soft transition-all duration-300">查看收費方案</a>
-            <a href="#contact" class="px-5 py-3 rounded-xl border border-slate-300 hover:bg-white/70 transition-all duration-300">預約需求討論</a>
+            <a href="#contact" class="px-5 py-3 rounded-xl bg-sky-500 text-white hover:bg-sky-600 shadow-soft">查看收費方案</a>
+            <a href="#contact" class="px-5 py-3 rounded-xl border border-slate-300 hover:bg-white/70">預約需求討論</a>
           </div>
-          <div class="mt-6 text-xs text-slate-500">
-            付款由 <span class="font-semibold">綠界科技 ECPay</span> 提供金流服務，支援信用卡 / 轉帳 / 超商代碼。
-          </div>
+          <div class="mt-6 text-xs text-slate-500">付款由 <span class="font-semibold">綠界科技 ECPay</span> 提供金流服務，支援信用卡 / 轉帳 / 超商代碼。</div>
         </div>
-
-        <!-- 右側色塊區 -->
         <div class="glass rounded-2xl p-6 md:p-10 shadow-soft border border-white/50">
           <div class="grid grid-cols-2 gap-4">
-
-            <div class="rounded-xl p-5 border border-slate-200 bg-gradient-to-br from-sky-100 to-sky-200 transform transition-all duration-500 hover:scale-105 hover:from-sky-200 hover:to-sky-300 animate-slide-in">
+            <div class="rounded-xl bg-white p-5 border border-slate-200">
               <div class="text-sm text-slate-500">網站 / 後台</div>
-              <div class="mt-2 text-2xl font-extrabold text-slate-900">快速部署</div>
+              <div class="mt-2 text-2xl font-extrabold">快速部署</div>
             </div>
-
-            <div class="rounded-xl p-5 border border-slate-200 bg-gradient-to-br from-green-100 to-green-200 transform transition-all duration-500 hover:scale-105 hover:from-green-200 hover:to-green-300 animate-slide-in">
+            <div class="rounded-xl bg-white p-5 border border-slate-200">
               <div class="text-sm text-slate-500">API / 串接</div>
-              <div class="mt-2 text-2xl font-extrabold text-slate-900">系統整合</div>
+              <div class="mt-2 text-2xl font-extrabold">系統整合</div>
             </div>
-
-            <div class="rounded-xl p-5 border border-slate-200 bg-gradient-to-br from-yellow-100 to-yellow-200 transform transition-all duration-500 hover:scale-105 hover:from-yellow-200 hover:to-yellow-300 animate-slide-in">
+            <div class="rounded-xl bg-white p-5 border border-slate-200">
               <div class="text-sm text-slate-500">資料流程</div>
-              <div class="mt-2 text-2xl font-extrabold text-slate-900">自動化</div>
+              <div class="mt-2 text-2xl font-extrabold">自動化</div>
             </div>
-
-            <div class="rounded-xl p-5 border border-slate-200 bg-gradient-to-br from-pink-100 to-pink-200 transform transition-all duration-500 hover:scale-105 hover:from-pink-200 hover:to-pink-300 animate-slide-in">
+            <div class="rounded-xl bg-white p-5 border border-slate-200">
               <div class="text-sm text-slate-500">維運</div>
-              <div class="mt-2 text-2xl font-extrabold text-slate-900">長期支援</div>
+              <div class="mt-2 text-2xl font-extrabold">長期支援</div>
             </div>
-
           </div>
         </div>
-
       </div>
     </div>
   </section>
-</body>
-</html>
-
 
 <!-- SERVICES 改版 -->
 <section id="services" class="py-16 md:py-24 bg-slate-50">
