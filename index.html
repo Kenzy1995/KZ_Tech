@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KenzyTech 凱致資訊｜服務與收費</title>
+  <meta name="description" content="KenzyTech 凱致資訊 — 客製化軟體開發與維護方案：年繳制月費 NT$1,500 起，提供網站、App、資料流程與系統整合。金流採用綠界科技 ECPay。" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --brand:#0ea5e9; --ink:#0f172a; --muted:#64748b; --bg:#f8fafc; }
+    html,body{ font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans TC, Arial, "Apple Color Emoji", "Segoe UI Emoji"; color:var(--ink); background:var(--bg) }
+    .glass{ background:rgba(255,255,255,.7); backdrop-filter: blur(10px); }
+    .shadow-soft{ box-shadow: 0 10px 30px rgba(2,6,23,.08); }
+    .badge{ font-size:.75rem; padding:.25rem .5rem; border-radius:999px; background:rgba(14,165,233,.1); color:#0369a1; border:1px solid rgba(14,165,233,.2) }
+    .check::before{ content:"✓"; display:inline-block; margin-right:.5rem }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 font-extrabold tracking-tight text-slate-900">
+        <img src="https://drive.google.com/uc?export=view&id=1JkPfQ25BzFKzBhXnI7jirS2K06oqWn3_" alt="KenzyTech 凱致資訊 Logo" class="h-8 w-auto rounded"/>
+        <span>KenzyTech 凱致資訊</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-700">
+        <a href="#services" class="hover:text-slate-900">服務</a>
+        <a href="#pricing" class="hover:text-slate-900">收費方案</a>
+        <a href="#cases" class="hover:text-slate-900">成功案例</a>
+        <a href="#process" class="hover:text-slate-900">合作流程</a>
+        <a href="#faq" class="hover:text-slate-900">常見問題</a>
+        <a href="#contact" class="inline-flex items-center px-4 py-2 rounded-xl bg-slate-900 text-white hover:bg-slate-800">立即諮詢</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative isolate overflow-hidden">
+    <div class="absolute inset-0 -z-10">
+      <svg class="w-full h-full opacity-60" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 560">
+        <defs>
+          <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0%" stop-color="#e0f2fe"/>
+            <stop offset="100%" stop-color="#f1f5f9"/>
+          </linearGradient>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#g)"/>
+      </svg>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <span class="badge">客製化軟體 / 年繳制服務</span>
+          <h1 class="mt-4 text-4xl md:text-5xl font-black tracking-tight leading-tight">以結果為導向的軟體開發夥伴</h1>
+          <p class="mt-5 text-lg text-slate-600 leading-relaxed">提供網站、App、內部系統與資料流程整合。以 <strong>月費（年繳）NT$1,500 起</strong> 的服務方案，搭配客製化開發，快速上線、穩定維運。</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#pricing" class="px-5 py-3 rounded-xl bg-sky-500 text-white hover:bg-sky-600 shadow-soft">查看收費方案</a>
+            <a href="#contact" class="px-5 py-3 rounded-xl border border-slate-300 hover:bg-white/70">預約需求討論</a>
+          </div>
+          <div class="mt-6 text-xs text-slate-500">付款由 <span class="font-semibold">綠界科技 ECPay</span> 提供金流服務，支援信用卡 / 轉帳 / 超商代碼。</div>
+        </div>
+        <div class="glass rounded-2xl p-6 md:p-10 shadow-soft border border-white/50">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="rounded-xl bg-white p-5 border border-slate-200">
+              <div class="text-sm text-slate-500">網站 / 後台</div>
+              <div class="mt-2 text-2xl font-extrabold">快速部署</div>
+            </div>
+            <div class="rounded-xl bg-white p-5 border border-slate-200">
+              <div class="text-sm text-slate-500">API / 串接</div>
+              <div class="mt-2 text-2xl font-extrabold">系統整合</div>
+            </div>
+            <div class="rounded-xl bg-white p-5 border border-slate-200">
+              <div class="text-sm text-slate-500">資料流程</div>
+              <div class="mt-2 text-2xl font-extrabold">自動化</div>
+            </div>
+            <div class="rounded-xl bg-white p-5 border border-slate-200">
+              <div class="text-sm text-slate-500">維運</div>
+              <div class="mt-2 text-2xl font-extrabold">長期支援</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-black">我們能做什麼</h2>
+        <p class="mt-4 text-slate-600">以產品角度思考與交付，從原型到上線，提供一條龍服務。</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl bg-white p-6 border border-slate-200 shadow-soft">
+          <div class="text-sm font-semibold text-sky-700">Web & App</div>
+          <h3 class="mt-2 text-xl font-bold">網站與行動應用</h3>
+          <ul class="mt-4 space-y-2 text-slate-600">
+            <li class="check">企業官網、電商、預約系統</li>
+            <li class="check">React/Vue、Next/Nuxt、Flutter</li>
+            <li class="check">SEO、效能與易用性最佳化</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl bg-white p-6 border border-slate-200 shadow-soft">
+          <div class="text-sm font-semibold text-sky-700">Integration</div>
+          <h3 class="mt-2 text-xl font-bold">系統整合與自動化</h3>
+          <ul class="mt-4 space-y-2 text-slate-600">
+            <li class="check">金流（含綠界）、物流、第三方 API</li>
+            <li class="check">Google Sheet / AppSheet / LINE 串接</li>
+            <li class="check">排程、報表、通知與權限管理</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl bg-white p-6 border border-slate-200 shadow-soft">
+          <div class="text-sm font-semibold text-sky-700">SRE</div>
+          <h3 class="mt-2 text-xl font-bold">維運與資安</h3>
+          <ul class="mt-4 space-y-2 text-slate-600">
+            <li class="check">雲端佈署、備援、監控告警</li>
+            <li class="check">資料備份與恢復機制</li>
+            <li class="check">OWASP 基礎防護與資安健檢</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="py-16 md:py-24 bg-white border-y border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-black">收費方案（年繳制）</h2>
+        <p class="mt-4 text-slate-600">基礎維護採 <strong>月費（年繳）NT$1,500 起</strong>，客製功能以工作量另行報價。
+          所有交易均透過 <strong>綠界科技 ECPay</strong> 完成。</p>
+      </div>
+
+      <div class="mt-10 grid lg:grid-cols-3 gap-6">
+        <!-- Starter -->
+        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-soft">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xl font-bold">Starter</h3>
+            <span class="badge">入門</span>
+          </div>
+          <div class="mt-4">
+            <div class="text-4xl font-extrabold">NT$1,500<span class="text-base font-semibold text-slate-500"> / 月</span></div>
+            <div class="text-sm text-slate-500">年繳 NT$18,000，適合官網 / 登陸頁</div>
+          </div>
+          <ul class="mt-6 space-y-2 text-slate-700">
+            <li class="check">基本維護與 SSL 憑證</li>
+            <li class="check">內容小改（每月 2 次，單次 ≤ 30 分鐘）</li>
+            <li class="check">Uptime 監控與備份（每日）</li>
+          </ul>
+          <a href="#contact" class="mt-6 inline-flex w-full justify-center rounded-xl bg-slate-900 text-white py-3 hover:bg-slate-800">年繳申請</a>
+        </div>
+
+        <!-- Growth -->
+        <div class="rounded-2xl border-2 border-sky-500 bg-white p-6 shadow-soft">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xl font-bold">Growth</h3>
+            <span class="badge">推薦</span>
+          </div>
+          <div class="mt-4">
+            <div class="text-4xl font-extrabold">NT$3,500<span class="text-base font-semibold text-slate-500"> / 月</span></div>
+            <div class="text-sm text-slate-500">年繳 NT$42,000，適合中小企業與成長型產品</div>
+          </div>
+          <ul class="mt-6 space-y-2 text-slate-700">
+            <li class="check">含 Starter 全部</li>
+            <li class="check">每月 6 小時開發額度（可累計當季）</li>
+            <li class="check">資料流程 / API 串接調整</li>
+          </ul>
+          <a href="#contact" class="mt-6 inline-flex w-full justify-center rounded-xl bg-sky-500 text-white py-3 hover:bg-sky-600">年繳申請</a>
+        </div>
+
+        <!-- Business -->
+        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-soft">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xl font-bold">Business</h3>
+            <span class="badge">企業</span>
+          </div>
+          <div class="mt-4">
+            <div class="text-4xl font-extrabold">客製報價</div>
+            <div class="text-sm text-slate-500">含專屬 PM / SRE 與 SLA</div>
+          </div>
+          <ul class="mt-6 space-y-2 text-slate-700">
+            <li class="check">每月專屬時數與衝刺開發</li>
+            <li class="check">多環境佈署與滾動更新</li>
+            <li class="check">資安與稽核支援</li>
+          </ul>
+          <a href="#contact" class="mt-6 inline-flex w-full justify-center rounded-xl bg-slate-900 text-white py-3 hover:bg-slate-800">預約顧問</a>
+        </div>
+      </div>
+
+      <div class="mt-8 grid md:grid-cols-3 gap-4 text-sm text-slate-600">
+        <div class="rounded-xl p-4 bg-slate-50 border border-slate-200">＊月費為年繳制（一次收取 12 個月）。</div>
+        <div class="rounded-xl p-4 bg-slate-50 border border-slate-200">＊客製功能、第三方服務費用（如簡訊、金流手續費）依實際用量另計。</div>
+        <div class="rounded-xl p-4 bg-slate-50 border border-slate-200">＊提供二聯 / 三聯發票；合約與驗收標準於簽約文件載明。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASES -->
+  <section id="cases" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-black">成功案例</h2>
+        <p class="mt-4 text-slate-600">真實客戶專案，持續維運與迭代中。</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-2 gap-6">
+        <article class="rounded-2xl bg-white p-6 border border-slate-200 shadow-soft">
+          <div class="text-sm font-semibold text-sky-700">酒店旅宿 / SaaS</div>
+          <h3 class="mt-2 text-xl font-bold">接駁車預約系統｜汐止福泰大飯店</h3>
+          <p class="mt-3 text-slate-600">建置智慧化接駁車預約系統，支援旅客線上預約、時段控管與後台排班；並提供通知、報表與權限管理，有效提升營運效率與旅客體驗。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-black">合作流程</h2>
+        <p class="mt-4 text-slate-600">透明可追蹤的專案節點，確保溝通與交付品質。</p>
+      </div>
+      <ol class="mt-8 grid md:grid-cols-5 gap-4">
+        <li class="rounded-2xl bg-white p-4 border border-slate-200 shadow-soft">
+          <div class="text-sm font-semibold text-sky-700">01 諮詢</div>
+          <p class="mt-1 text-slate-700">30–60 分鐘理解需求與範疇</p>
+        </li>
+        <li class="rounded-2xl bg-white p-4 border border-slate-200 shadow-soft">
+          <div class="text-sm font-semibold text-sky-700">02 報價</div>
+          <p class="mt-1 text-slate-700">提出功能清單、時程與估價</p>
+        </li>
+        <li class="rounded-2xl bg-white p-4 border border-slate-200 shadow-soft">
+          <div class="text-sm font-semibold text-sky-700">03 簽約 / 付款</div>
+          <p class="mt-1 text-slate-700">收取訂金（綠界 ECPay）</p>
+        </li>
+        <li class="rounded-2xl bg-white p-4 border border-slate-200 shadow-soft">
+          <div class="text-sm font-semibold text-sky-700">04 開發</div>
+          <p class="mt-1 text-slate-700">分階段 Demo 與里程碑驗收</p>
+        </li>
+        <li class="rounded-2xl bg-white p-4 border border-slate-200 shadow-soft">
+          <div class="text-sm font-semibold text-sky-700">05 上線 / 維護</div>
+          <p class="mt-1 text-slate-700">部署、監控、備份與優化</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-16 md:py-24 bg-white border-y border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-black">常見問題</h2>
+        <p class="mt-4 text-slate-600">金流審核需要清楚揭露的條款已整理如下。</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-2 gap-6">
+        <div class="rounded-2xl p-6 bg-slate-50 border border-slate-200">
+          <h3 class="font-semibold">Q1｜是否提供試用或鑑賞期？</h3>
+          <p class="mt-2 text-slate-600">客製化服務不適用 7 日鑑賞期。若為月費型維護之年繳方案，於尚未啟用服務與尚未進行客製化前可申請退費（將扣除金流手續費）。</p>
+        </div>
+        <div class="rounded-2xl p-6 bg-slate-50 border border-slate-200">
+          <h3 class="font-semibold">Q2｜如何付款？是否安全？</h3>
+          <p class="mt-2 text-slate-600">所有款項皆透過 <strong>綠界科技 ECPay</strong> 完成，支援信用卡（Visa/Mastercard/JCB）、網路 ATM、超商代碼。</p>
+        </div>
+        <div class="rounded-2xl p-6 bg-slate-50 border border-slate-200">
+          <h3 class="font-semibold">Q3｜發票與稅務</h3>
+          <p class="mt-2 text-slate-600">依規定開立二聯或三聯式電子發票；價格均為未稅，稅額將按法規加計。</p>
+        </div>
+        <div class="rounded-2xl p-6 bg-slate-50 border border-slate-200">
+          <h3 class="font-semibold">Q4｜合約與驗收標準</h3>
+          <p class="mt-2 text-slate-600">專案將提供功能清單、排程與驗收條件；維護方案載明服務項目與回應時效（SLA）。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / PAYMENT NOTE -->
+  <section id="contact" class="py-16 md:py-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-black">開始你的專案</h2>
+      <p class="mt-4 text-slate-600">留下需求，我們在 1–2 個工作日內回覆。若你已確定年繳方案，可直接透過綠界完成付款。</p>
+
+      <div class="mt-8 grid md:grid-cols-2 gap-6 text-left">
+        <form class="rounded-2xl bg-white p-6 border border-slate-200 shadow-soft">
+          <div class="grid gap-4">
+            <input class="w-full rounded-xl border border-slate-300 px-4 py-3" placeholder="公司 / 單位名稱" />
+            <div class="grid grid-cols-2 gap-4">
+              <input class="w-full rounded-xl border border-slate-300 px-4 py-3" placeholder="聯絡人" />
+              <input class="w-full rounded-xl border border-slate-300 px-4 py-3" placeholder="Email" />
+            </div>
+            <textarea class="w-full rounded-xl border border-slate-300 px-4 py-3" rows="5" placeholder="請描述你的需求與預算範圍"></textarea>
+            <button type="button" class="rounded-xl bg-slate-900 text-white px-5 py-3 hover:bg-slate-800">送出需求</button>
+          </div>
+        </form>
+        <div class="rounded-2xl bg-slate-50 p-6 border border-slate-200">
+          <div class="text-sm font-semibold text-sky-700">付款方式</div>
+          <h3 class="mt-1 text-xl font-bold">綠界科技 ECPay</h3>
+          <ul class="mt-4 space-y-2 text-slate-700">
+            <li class="check">信用卡（Visa / MasterCard / JCB）</li>
+            <li class="check">網路 ATM、超商代碼繳費</li>
+            <li class="check">交易資料全程加密</li>
+          </ul>
+          <a href="#" class="mt-6 inline-flex w-full justify-center rounded-xl bg-sky-500 text-white py-3 hover:bg-sky-600">前往年繳方案付款</a>
+          <p class="mt-4 text-sm text-slate-500">※ 以上金額均為未稅，實際請以訂單頁與合約為準。</p>
+          <div class="mt-6 h-px bg-slate-200"></div>
+          <div class="mt-6 text-sm text-slate-600 space-y-2">
+            <p><span class="font-semibold">客服時間：</span>周一~周日 08:30 ~ 17:00</p>
+            <p><span class="font-semibold">Email：</span><a href="mailto:wu06u03d93@gmail.com" class="text-sky-700 underline">wu06u03d93@gmail.com</a></p>
+            <p><span class="font-semibold">Line：</span>gaexp245838</p>
+            <p><span class="font-semibold">Telegram：</span><a href="https://t.me/Kenzy5833" class="text-sky-700 underline" target="_blank">@Kenzy5833</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 border-t border-slate-200 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-slate-500 grid md:grid-cols-3 gap-6">
+      <div>
+        <div class="font-semibold text-slate-700">KenzyTech 凱致資訊</div>
+        <p class="mt-2">提供網站、App、API 與自動化整合的全方位開發服務。</p>
+      </div>
+      <div>
+        <div class="font-semibold text-slate-700">法務與條款</div>
+        <ul class="mt-2 space-y-1">
+          <li>服務條款（含 SLA）</li>
+          <li>隱私權政策</li>
+          <li>退款與取消政策</li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-semibold text-slate-700">聯絡資訊</div>
+        <ul class="mt-2 space-y-1">
+          <li>Email：<a href="mailto:wu06u03d93@gmail.com" class="underline">wu06u03d93@gmail.com</a></li>
+          <li>客服時間：周一~周日 08:30–17:00</li>
+          <li>Line：gaexp245838</li>
+          <li>Telegram：<a href="https://t.me/Kenzy5833" class="underline" target="_blank">@Kenzy5833</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-6 text-center text-xs text-slate-400">© <span id="y"></span> KenzyTech 凱致資訊. All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
