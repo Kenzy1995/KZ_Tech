@@ -394,7 +394,7 @@
 <section id="contact" class="py-16 md:py-24">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
     <h2 class="text-3xl md:text-4xl font-black">開始你的專案</h2>
-    <p class="mt-4 text-slate-600">留下需求，我們在 1–2 個工作日內回覆。若你已確定年繳方案，可直接透過綠界完成付款。</p>
+    <p class="mt-4 text-slate-600">專案皆須客製化開發，請留下需求，我們將在 5–7 個工作日內回覆。。</p>
 
     <div class="mt-8 grid md:grid-cols-2 gap-6 text-left">
       <form id="contactForm" class="rounded-2xl bg-white p-6 border border-slate-200 shadow-soft">
@@ -444,10 +444,10 @@
         const text = await response.text();
 
         if (response.ok) {
-          statusDiv.textContent = "✅ 送出成功，我們會盡快聯繫你！";
+          statusDiv.textContent = "✅ 以收到您的回覆，我們將盡快與您聯繫！";
           form.reset();
         } else {
-          statusDiv.textContent = "❌ 送出失敗：" + text;
+          statusDiv.textContent = "❌ 提交失敗：" + text;
         }
 
       } catch(err) {
@@ -468,6 +468,7 @@
 
 </body>
 </html>
+
 
 
 
