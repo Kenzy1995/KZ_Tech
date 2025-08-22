@@ -355,72 +355,81 @@
 
 
 
-  <!-- PRICING 按鈕修改 -->
-  <section id="pricing" class="py-16 md:py-24 bg-white border-y border-slate-200/60">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-2xl">
-        <h2 class="text-3xl md:text-4xl font-black">收費方案（年繳制）</h2>
-        <p class="mt-4 text-slate-600">基礎維護採 <strong>月費（年繳）NT$1,500 起</strong>，客製功能以工作量另行報價。
-          所有交易均透過 <strong>綠界科技 ECPay</strong> 完成。</p>
+<!-- PRICING 按鈕修改 -->
+<section id="pricing" class="py-16 md:py-24 bg-white border-y border-slate-200/60">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-2xl">
+      <h2 class="text-3xl md:text-4xl font-black">收費方案（年繳制）</h2>
+      <p class="mt-4 text-slate-600">基礎維護採 <strong>月費（年繳）NT$1,500 起</strong>，客製功能以工作量另行報價。
+        所有交易均透過 <strong>綠界科技 ECPay</strong> 完成。</p>
+    </div>
+
+    <div class="mt-10 grid lg:grid-cols-3 gap-6">
+      
+      <!-- Starter -->
+      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-soft 
+                  transition transform hover:scale-105 hover:shadow-xl hover:border-sky-500">
+        <div class="flex items-center justify-between">
+          <h3 class="text-xl font-bold">Starter</h3>
+          <span class="badge">入門</span>
+        </div>
+        <div class="mt-4">
+          <div class="text-4xl font-extrabold">NT$1,500
+            <span class="text-base font-semibold text-slate-500"> / 月</span>
+          </div>
+          <div class="text-sm text-slate-500">年繳 NT$18,000，適合官網 / 登陸頁</div>
+        </div>
+        <ul class="mt-6 space-y-2 text-slate-700">
+          <li class="check">基本維護與 SSL 憑證</li>
+          <li class="check">內容小改（每月 2 次，單次 ≤ 30 分鐘）</li>
+          <li class="check">Uptime 監控與備份（每日）</li>
+        </ul>
+        <a href="#contact" class="mt-6 inline-flex w-full justify-center rounded-xl bg-slate-900 text-white py-3 hover:bg-slate-800">聯繫客服</a>
       </div>
 
-      <div class="mt-10 grid lg:grid-cols-3 gap-6">
-        <!-- Starter -->
-        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-soft">
-          <div class="flex items-center justify-between">
-            <h3 class="text-xl font-bold">Starter</h3>
-            <span class="badge">入門</span>
-          </div>
-          <div class="mt-4">
-            <div class="text-4xl font-extrabold">NT$1,500<span class="text-base font-semibold text-slate-500"> / 月</span></div>
-            <div class="text-sm text-slate-500">年繳 NT$18,000，適合官網 / 登陸頁</div>
-          </div>
-          <ul class="mt-6 space-y-2 text-slate-700">
-            <li class="check">基本維護與 SSL 憑證</li>
-            <li class="check">內容小改（每月 2 次，單次 ≤ 30 分鐘）</li>
-            <li class="check">Uptime 監控與備份（每日）</li>
-          </ul>
-          <a href="#contact" class="mt-6 inline-flex w-full justify-center rounded-xl bg-slate-900 text-white py-3 hover:bg-slate-800">聯繫客服</a>
+      <!-- Growth -->
+      <div class="rounded-2xl border-2 border-sky-500 bg-white p-6 shadow-soft 
+                  transition transform hover:scale-105 hover:shadow-xl hover:border-sky-500">
+        <div class="flex items-center justify-between">
+          <h3 class="text-xl font-bold">Growth</h3>
+          <span class="badge">推薦</span>
         </div>
+        <div class="mt-4">
+          <div class="text-4xl font-extrabold">NT$3,500
+            <span class="text-base font-semibold text-slate-500"> / 月</span>
+          </div>
+          <div class="text-sm text-slate-500">年繳 NT$42,000，適合中小企業與成長型產品</div>
+        </div>
+        <ul class="mt-6 space-y-2 text-slate-700">
+          <li class="check">含 Starter 全部</li>
+          <li class="check">每月 6 小時開發額度（可累計當季）</li>
+          <li class="check">資料流程 / API 串接調整</li>
+        </ul>
+        <a href="#contact" class="mt-6 inline-flex w-full justify-center rounded-xl bg-sky-500 text-white py-3 hover:bg-sky-600">聯繫客服</a>
+      </div>
 
-        <!-- Growth -->
-        <div class="rounded-2xl border-2 border-sky-500 bg-white p-6 shadow-soft">
-          <div class="flex items-center justify-between">
-            <h3 class="text-xl font-bold">Growth</h3>
-            <span class="badge">推薦</span>
-          </div>
-          <div class="mt-4">
-            <div class="text-4xl font-extrabold">NT$3,500<span class="text-base font-semibold text-slate-500"> / 月</span></div>
-            <div class="text-sm text-slate-500">年繳 NT$42,000，適合中小企業與成長型產品</div>
-          </div>
-          <ul class="mt-6 space-y-2 text-slate-700">
-            <li class="check">含 Starter 全部</li>
-            <li class="check">每月 6 小時開發額度（可累計當季）</li>
-            <li class="check">資料流程 / API 串接調整</li>
-          </ul>
-          <a href="#contact" class="mt-6 inline-flex w-full justify-center rounded-xl bg-sky-500 text-white py-3 hover:bg-sky-600">聯繫客服</a>
+      <!-- Business -->
+      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-soft 
+                  transition transform hover:scale-105 hover:shadow-xl hover:border-sky-500">
+        <div class="flex items-center justify-between">
+          <h3 class="text-xl font-bold">Business</h3>
+          <span class="badge">企業</span>
         </div>
-
-        <!-- Business -->
-        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-soft">
-          <div class="flex items-center justify-between">
-            <h3 class="text-xl font-bold">Business</h3>
-            <span class="badge">企業</span>
-          </div>
-          <div class="mt-4">
-            <div class="text-4xl font-extrabold">客製報價</div>
-            <div class="text-sm text-slate-500">含專屬 PM / SRE 與 SLA</div>
-          </div>
-          <ul class="mt-6 space-y-2 text-slate-700">
-            <li class="check">每月專屬時數與衝刺開發</li>
-            <li class="check">多環境佈署與滾動更新</li>
-            <li class="check">資安與稽核支援</li>
-          </ul>
-          <a href="#contact" class="mt-6 inline-flex w-full justify-center rounded-xl bg-slate-900 text-white py-3 hover:bg-slate-800">聯繫客服</a>
+        <div class="mt-4">
+          <div class="text-4xl font-extrabold">客製報價</div>
+          <div class="text-sm text-slate-500">含專屬 PM / SRE 與 SLA</div>
         </div>
+        <ul class="mt-6 space-y-2 text-slate-700">
+          <li class="check">每月專屬時數與衝刺開發</li>
+          <li class="check">多環境佈署與滾動更新</li>
+          <li class="check">資安與稽核支援</li>
+        </ul>
+        <a href="#contact" class="mt-6 inline-flex w-full justify-center rounded-xl bg-slate-900 text-white py-3 hover:bg-slate-800">聯繫客服</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
 <!-- CONTACT / FORM -->
 <section id="contact" class="py-16 md:py-24">
@@ -505,6 +514,7 @@
 
 </body>
 </html>
+
 
 
 
