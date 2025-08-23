@@ -38,11 +38,28 @@
     
     // 服务项目图标
     SERVICE_APP: "https://raw.githubusercontent.com/Kenzy1995/KZ_Tech/main/images/App開發.png",
-    SERVICE_WEB: "https://raw.githubusercontent.com/Kenzy1995/KZ_Tech/main/images/物聯網應用開發.png",
-    SERVICE_MINI_APP: "https://raw.githubusercontent.com/Kenzy1995/KZ_Tech/main/images/小程序開發 .png",
-    SERVICE_IOT: "https://raw.githubusercontent.com/Kenzy1995/KZ_Tech/main/images/網站系統開發.png"
+    SERVICE_WEB: "https://raw.githubusercontent.com/Kenzy1995/KZ_Tech/main/images/網站系統開發.png",
+    SERVICE_MINI_APP: "https://raw.githubusercontent.com/Kenzy1995/KZ_Tech/main/images/小程序開發.png", 
+    SERVICE_IOT: "https://raw.githubusercontent.com/Kenzy1995/KZ_Tech/main/images/物聯網應用開發.png",
+
+    // 成功案例
+    CASE_FUTAI_LOGO: "https://raw.githubusercontent.com/Kenzy1995/KZ_Tech/main/images/futai-logo.png"
   };
+
+  // 页面加载完成后初始化图片
+  function initImages() {
+    document.getElementById("intro-logo").src = IMAGE_CONFIG.INTRO_LOGO;
+    document.getElementById("nav-logo").src = IMAGE_CONFIG.NAV_LOGO;
+    document.getElementById("service-app").src = IMAGE_CONFIG.SERVICE_APP;
+    document.getElementById("service-web").src = IMAGE_CONFIG.SERVICE_WEB;
+    document.getElementById("service-mini-app").src = IMAGE_CONFIG.SERVICE_MINI_APP;
+    document.getElementById("service-iot").src = IMAGE_CONFIG.SERVICE_IOT;
+    document.getElementById("case-futai-logo").src = IMAGE_CONFIG.CASE_FUTAI_LOGO;
+  }
+
+  window.addEventListener("DOMContentLoaded", initImages);
 </script>
+
 
 <!-- Intro Container -->
 <div id="intro" class="fixed inset-0 flex items-center justify-center bg-black z-50">
@@ -296,26 +313,36 @@
 
 <!-- CASES -->
 <section id="cases" class="py-16 md:py-24">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="max-w-2xl">
-<h2 class="text-3xl md:text-4xl font-black">成功案例</h2>
-<p class="mt-4 text-slate-600">真實客戶專案，持續維運與迭代中。</p>
-</div>
-<div class="mt-10 grid md:grid-cols-2 gap-6">
-<article class="rounded-2xl bg-white p-6 border border-slate-200 shadow-soft">
-  <div class="text-sm font-semibold text-sky-700">酒店旅宿 / 線上系統服務</div>
-  <h3 class="mt-2 text-xl font-bold">
-    <a href="https://sites.google.com/view/fortehotelxizhi?usp=sharing" target="_blank" class="hover:text-sky-500">
-      接駁車預約系統｜汐止福泰大飯店
-    </a>
-  </h3>
-  <p class="mt-3 text-slate-600">
-    建置智慧化接駁車預約系統，支援旅客線上預約、時段控管與後台排班；並提供通知、報表與權限管理，有效提升營運效率與旅客體驗。
-  </p>
-</article>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-2xl">
+      <h2 class="text-3xl md:text-4xl font-black">成功案例</h2>
+      <p class="mt-4 text-slate-600">真實客戶專案，持續維運與迭代中。</p>
+    </div>
+    <div class="mt-10 grid md:grid-cols-2 gap-6">
+      <article class="rounded-2xl bg-white p-6 border border-slate-200 shadow-soft flex items-start gap-4">
+        
+        <!-- ✅ 左邊 Logo -->
+        <img id="case-futai-logo" alt="福泰大飯店 Logo" 
+             class="h-16 w-16 object-contain flex-shrink-0">
+
+        <!-- ✅ 右邊文字內容 -->
+        <div>
+          <div class="text-sm font-semibold text-sky-700">酒店旅宿 / 線上系統服務</div>
+          <h3 class="mt-2 text-xl font-bold">
+            <a href="https://sites.google.com/view/fortehotelxizhi?usp=sharing" target="_blank" class="hover:text-sky-500">
+              接駁車預約系統｜汐止福泰大飯店
+            </a>
+          </h3>
+          <p class="mt-3 text-slate-600">
+            建置智慧化接駁車預約系統，支援旅客線上預約、時段控管與後台排班；並提供通知、報表與權限管理，有效提升營運效率與旅客體驗。
+          </p>
+        </div>
+
+      </article>
+    </div>
+  </div>
 </section>
+
 
 <!-- FAQ -->
 <section id="faq" class="py-16 md:py-24 bg-white border-y border-slate-200/60">
@@ -544,6 +571,7 @@
   </script>
 </body>
 </html>
+
 
 
 
